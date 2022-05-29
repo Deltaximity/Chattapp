@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Kodexempel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="container">
+        <header class="jumbotron text-center mt-3">
+            <!-- bild hämtad från freesvg.org-->
+            <image src="public/images/uil.svg" alt="logo" width="100">
+            <h1 class="display-3">Välkommen till Bosses fågelchatt</h1>
+            <p class="lead">Här chattar vi allt om kråkor och gökar!</p>
+        </header>
+        <main>
+            <h2 class="display-4">Dagens diskussioner:</h2>
+            <section id="flow">
+                
+            </section>
+            <div class="row mt-5">
+                <div class="col-12 col-md-8 col-xl-10">
+                    <label for="msg">Meddelande</label>
+                    <input type="text" id="msg" class="form-control">
+                    <!-- Ett extra input fält för att skriva in användar ID -->
+                    <label for="usr">Skriv till: (ID)</label>
+                    <input type="text" id="usr" class="form-control" placeholder="Lämna tom för att skicka till alla...">
+                </div>
+                <div class="col-12 col-med-4 col-xl-2">
+                    <a href="#" class="btn btn-danger">Skriv inlägg</a>
+                </div>
+            </div>
+       
+
+        </main>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="public/client-script.js"></script>
+    </body>
+</html>
